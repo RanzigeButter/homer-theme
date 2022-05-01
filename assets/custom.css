@@ -1,0 +1,191 @@
+/*  ========================================================================
+    # Homer - Custom CSS
+    ========================================================================  */
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: Rubik;
+  src: url('/assets/fonts/rubik-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url('/assets/fonts/rubik-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: Rubik, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Rubik, sans-serif !important;
+  line-height: 1.2;
+}
+
+.container {
+  flex-grow: 0 !important;
+  max-width: 1400px !important;
+  width: 90% !important;
+  padding: 0 !important;
+}
+
+.section {
+  padding: 2rem 0 4rem !important;
+}
+
+.column {
+  padding: 0 0.75rem;
+}
+
+/* Header
+   ========================================================================== */
+
+#bighead .first-line {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  backdrop-filter: blur(20px);
+}
+
+#bighead .first-line .container {
+  display: flex;
+  min-height: auto !important;
+}
+
+#bighead .first-line .logo {
+  width: 60px;
+  height: 60px;
+  float: none !important;
+}
+
+#bighead .first-line .logo a {
+  display: flex;
+}
+
+#bighead .first-line .logo img {
+  width: 60px;
+  height: 60px;
+  padding: 0 !important;
+  border-radius: 50%;
+}
+
+#bighead .first-line .dashboard-title {
+  margin: 0 0 0 2rem;
+  padding: 0 !important;
+}
+
+#bighead .first-line .dashboard-title .headline {
+  margin: 0 !important;
+}
+
+#bighead .first-line .dashboard-title h1 {
+  margin: 0;
+  font-weight: 700;
+}
+
+#bighead .navbar {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+#bighead .navbar,
+#bighead .navbar .navbar-brand,
+#bighead .navbar .navbar-menu,
+#bighead .navbar .navbar-menu .navbar-start,
+#bighead .navbar .navbar-menu .navbar-end {
+  align-items: center !important;
+}
+
+#bighead .navbar .navbar-brand,
+#bighead .navbar .navbar-menu {
+  margin: 0 !important;
+}
+
+#bighead .navbar .navbar-menu {
+  box-shadow: none !important;
+}
+
+#bighead .navbar .navbar-menu .navbar-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#bighead .navbar .navbar-item {
+  padding: 0 12px !important;
+}
+
+#bighead .navbar .navbar-burger {
+  width: 1rem !important;
+  height: 1rem !important;
+  padding: 0 !important;
+}
+
+#bighead .navbar a span {
+  display: flex;
+}
+
+#bighead .navbar a:focus,
+#bighead .navbar a:hover {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+#bighead .navbar .search-bar {
+  padding: 0 0 0 12px !important;
+}
+
+#bighead .navbar .search-bar label:before {
+  top: 4px;
+  color: var(--text-header) !important;
+}
+
+#bighead .navbar .search-bar input {
+  margin: 0 !important;
+  background-color: var(--highlight-hover) !important;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-title) !important;
+  outline: 0;
+}
+
+/* Card
+   ========================================================================== */
+
+.card {
+  margin: 0 0 1rem;
+  backdrop-filter: blur(20px);
+  border-radius: 1rem !important;
+}
+
+.card .card-content {
+  height: auto;
+  padding: 1.25rem;
+  border-radius: unset;
+}
+
+.card .media {
+  margin: 0 !important;
+}
+
+.card .title {
+  margin: 0 !important;
+  font-weight: 700;
+}
+
+.card .subtitle {
+  margin: 6px 0 0 !important;
+}
+
+.card .tag {
+  color: var(--text-title) !important;
+}

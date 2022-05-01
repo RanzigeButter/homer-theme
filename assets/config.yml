@@ -1,0 +1,53 @@
+---
+title: "Dashboard"
+subtitle: "Server"
+logo: "logo.png"
+header: true
+footer: false
+
+# Theme
+theme: default
+columns: 3
+stylesheet:
+  - "/assets/custom.css"
+colors:
+  light:
+    background-image: "/assets/wallpaper-light.jpg"
+    background: "#ffffff"
+    highlight-primary: rgba(255, 255, 255, 0.7)
+    highlight-secondary: "#ffffff"
+    highlight-hover: rgba(255, 255, 255, 0.7)
+    text-header: "#7c71dd"
+    text-title: "#060606"
+    text-subtitle: "#8e9ba8"
+    text: "#ffffff"
+    card-background: rgba(255, 255, 255, 0.7)
+    card-shadow: rgba(0, 0, 0, 0.3)
+    link: "#7c71dd"
+    link-hover: "#7c71dd"
+  dark:
+    background-image: "/assets/wallpaper-dark.jpg"
+    background: "#181c3a"
+    highlight-primary: rgba(24, 28, 58, 0.7)
+    highlight-secondary: "#181c3a"
+    highlight-hover: rgba(24, 28, 58, 0.7)
+    text-header: "#7c71dd"
+    text-title: "#ffffff"
+    text-subtitle: "#8e9ba8"
+    text: "#ffffff"
+    card-background: rgba(24, 28, 58, 0.7)
+    card-shadow: rgba(0, 0, 0, 0.3)
+    link: "#7c71dd"
+    link-hover: "#7c71dd"
+
+# Services
+services:
+  - name: "Media"
+    icon: "fas fa-photo-video"
+    items:
+  - name: "Services"
+    icon: "fas fa-stream"
+    items:
+  - name: "Systems"
+    icon: "fas fa-server"
+    items:
