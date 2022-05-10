@@ -102,8 +102,8 @@ h6 {
 #bighead .navbar,
 #bighead .navbar .navbar-brand,
 #bighead .navbar .navbar-menu,
-#bighead .navbar .navbar-menu .navbar-start,
-#bighead .navbar .navbar-menu .navbar-end {
+#bighead .navbar .navbar-start,
+#bighead .navbar .navbar-end {
   align-items: center !important;
 }
 
@@ -116,13 +116,42 @@ h6 {
   box-shadow: none !important;
 }
 
-#bighead .navbar .navbar-menu .navbar-end {
+#bighead .navbar .navbar-start,
+#bighead .navbar .navbar-end {
   display: flex;
   justify-content: flex-end;
 }
 
-#bighead .navbar .navbar-item {
+#bighead .navbar .navbar-start {
+  flex-direction: column;
+  align-items: flex-end !important;
+}
+
+@media screen and (min-width: 1024px) {
+  #bighead .navbar .navbar-start {
+    flex-direction: row;
+    align-items: center !important;
+  }
+}
+
+#bighead .navbar .navbar-start .navbar-item {
+  padding: 0 0 12px !important;
+}
+
+#bighead .navbar .navbar-end .navbar-item {
   padding: 0 12px !important;
+}
+
+@media screen and (min-width: 1024px) {
+  #bighead .navbar .navbar-start .navbar-item:first-child,
+  #bighead .navbar .navbar-end .navbar-item:first-child {
+    padding: 0 12px 0 0 !important;
+  }
+
+  #bighead .navbar .navbar-start .navbar-item,
+  #bighead .navbar .navbar-end .navbar-item {
+    padding: 0 12px !important;
+  }
 }
 
 #bighead .navbar .navbar-burger {
@@ -140,7 +169,7 @@ h6 {
   background-color: rgba(0, 0, 0, 0) !important;
 }
 
-#bighead .navbar .search-bar {
+#bighead .navbar .navbar-end .search-bar {
   padding: 0 0 0 12px !important;
 }
 
@@ -165,6 +194,10 @@ h6 {
   margin: 0 0 1rem;
   backdrop-filter: blur(20px);
   border-radius: 1rem !important;
+}
+
+.card:hover {
+  transform: scale(1.02) !important;
 }
 
 .card .card-content {

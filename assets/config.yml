@@ -40,6 +40,9 @@ colors:
     link: "#7c71dd"
     link-hover: "#7c71dd"
 
+# Links
+links:
+
 # Services
 services:
   - name: "Media"
