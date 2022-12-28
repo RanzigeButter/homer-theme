@@ -45,12 +45,9 @@ links:
 
 # Services
 services:
-  - name: "Media"
-    icon: "fas fa-photo-video"
+  - name: "Systems"
+    icon: "fas fa-server"
     items:
   - name: "Services"
     icon: "fas fa-stream"
-    items:
-  - name: "Systems"
-    icon: "fas fa-server"
     items:
